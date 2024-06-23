@@ -3,7 +3,7 @@
 
 intervalDelay := 50
 ; 循环次数
-n := 1000
+n := 10000
 
 ; 快捷键重启脚本
 F2:: Reload
@@ -20,24 +20,24 @@ F1:: {
         Sleep(400) ; default -> 200
         sendKey("E")
         ; 界面加载读条时间
-        Sleep(5500)
+        Sleep(7500)
         ; 向前走
-        sendKey("W", 5500)
+        sendKey("W", 5200)
         Sleep(intervalDelay)
         ; 向左走
-        sendKey("A", 2000)
+        sendKey("A", 1900)
         Sleep(intervalDelay)
         ; 向左前45度调整位置
         Send("{W Down}")
         Send("{D Down}")
-        Sleep(200)
+        Sleep(350)
         Send("{W Up}")
         Send("{D Up}")
         ; 释放战技
         Send("{Ctrl Down}")
         Sleep(intervalDelay)
         Send("{Ctrl Up}")
-        Sleep(5500)
+        Sleep(7500)
     }
 }
 
